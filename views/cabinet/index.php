@@ -15,6 +15,9 @@
                                     <ul>
                                         <li><a href="/cabinet/edit">Редактировать данные</a></li>
                                         <li><a href="/comments/create">Оставить отзыв</a></li>
+                                        <?php if($user['role'] == 'admin'):?>
+                                            <li><a href="/admin">Админпанель</a></li>
+                                        <?php endif ;?>
                                     </ul>
                             </div>
                         </div>
